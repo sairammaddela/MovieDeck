@@ -1,0 +1,102 @@
+#navbar{
+    width: inherit;
+    height: 4rem;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+body{
+    height: 100vh;
+}
+#search_block{
+    display: flex;
+    justify-content: center;
+}
+#search_btn{
+    margin-left: 1rem;
+    width: 5rem;
+    border-radius: 5px;
+    background: black;
+    color: white;
+}
+#search_field{
+    width: 20rem;
+    border-radius: 5px;
+    border: 2px solid darkgray;
+    height: 2.5rem;
+}
+#sortblock{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+#leftsortbtn{
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    background: black;
+    color: white;
+}
+#rightsortbtn{
+    margin-left: 0.5rem;
+    border-radius: 5px;
+    background: black;
+    color: white;
+}
+#all_favoritesblock{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+#all{
+    width: 5rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    background: black;
+    color: white;
+}
+#fav{
+    width: 5rem;
+    margin-left: 0.5rem;
+    border-radius: 5px;
+    background: black;
+    color: white;
+}
+#all_favoritesblock2{
+    width: 70vw;
+}
+#movieblock{
+    width: 90vw;
+    margin-left: 5vw;
+    height: 60vh;
+    background-color: black;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+.card{
+    width: 10rem;
+    height: 14rem;
+    border: 1px solid black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+
+}
+.movieposter{
+    height: 5rem;
+    width:8.5rem;
+    margin-bottom: 1rem;
+}
+.rating-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.fav-icon-btn{
+    border: white;
+    background-color: transparent;
+
+}
