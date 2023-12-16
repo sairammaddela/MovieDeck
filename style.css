@@ -2,8 +2,9 @@
     width: inherit;
     height: 4rem;
     background-color: black;
-    color: white;
+    color: green;
     padding: 1rem;
+    margin-bottom: 0;
 }
 body{
     height: 100vh;
@@ -33,13 +34,13 @@ body{
 #leftsortbtn{
     margin-right: 0.5rem;
     border-radius: 5px;
-    background: black;
+    background: green;
     color: white;
 }
 #rightsortbtn{
     margin-left: 0.5rem;
     border-radius: 5px;
-    background: black;
+    background: green;
     color: white;
 }
 #all_favoritesblock{
@@ -51,18 +52,22 @@ body{
     width: 5rem;
     margin-right: 0.5rem;
     border-radius: 5px;
-    background: black;
+    background: green;
     color: white;
 }
 #fav{
     width: 5rem;
     margin-left: 0.5rem;
     border-radius: 5px;
-    background: black;
+    background: green;
     color: white;
 }
 #all_favoritesblock2{
     width: 70vw;
+}
+main{
+    background-color: black;
+    height: 90.9vh;
 }
 #movieblock{
     width: 90vw;
@@ -78,7 +83,7 @@ body{
     overflow: auto;
 }
 .card{
-    width: 10rem;
+    width: 12rem;
     height: 14rem;
     border: 1px solid black;
     padding: 1rem;
@@ -87,8 +92,8 @@ body{
 
 }
 .movieposter{
-    height: 5rem;
-    width:8.5rem;
+    height: 7rem;
+    width:10rem;
     margin-bottom: 1rem;
 }
 .rating-flex{
@@ -99,4 +104,19 @@ body{
     border: white;
     background-color: transparent;
 
+}
+.pagination{
+    width: 8rem;
+    height: 2rem;
+    margin: auto;
+    margin-top: 1rem;
+    display:flex;
+    justify-content: space-around;
+}
+.pagination_button{
+    background-color: green;
+    border-radius: 5px;
+}
+i{
+    color:red;
 }

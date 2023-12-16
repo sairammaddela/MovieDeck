@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Movie Booking</title>
+        <title>MovieDeck</title>
         <link href="style.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/a95d476e04.js" crossorigin="anonymous"></script>
@@ -14,21 +14,26 @@
         </header>
         <main>
             <div id="search_block">
-                <input id="search_field" type="text" placeholder="search"/>
-                <button id="search_btn">Search</button>
+                <input id="search_field" type="text" placeholder="search" oninput="debounce(event)"/>
+                <!-- <button id="search_btn">Search</button> -->
             </div>
             <div id="sortblock">
-                <button id="leftsortbtn" onclick="sortbydate(event)">Sort By Date(Oldest to Newest)</button>
-                <button id="rightsortbtn" onclick="handlepromise()">Sort By Rating (least to Most)</button>
+                <button id="leftsortbtn" onclick="sortbydate(event)">Sort By Date</button>
+                <button id="rightsortbtn" onclick="handlepromise()">Sort By Rating</button>
             </div>
             <div id="all_favoritesblock">
                 <div id="all_favoritesblock2">
-                    <button id="all" onclick="handlepromise()">All</button>
+                    <button id="all" onclick="handleallbtn()">All</button>
                     <button id="fav" onclick="favoriteHandler(event)">Favorites</button>
                 </div>
             </div>
             <div id="movieblock">
 
+            </div>
+            <div class="pagination" style="gap:1rem;">
+                <button class="pagination_button" id="prev" onclick="prevclick(event)">previous</button>
+                <button class="pagination_button" id="page_value">value</button>
+                <button class="pagination_button" id="next" onclick="nextclick(event)">Next</button>
             </div>
         </main>
         <script src="index.js"></script>
