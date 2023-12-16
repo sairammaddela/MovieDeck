@@ -120,3 +120,14 @@ main{
 i{
     color:red;
 }
+@media screen and (width<480px){
+    .movieposter{
+        width:6.8rem;
+    }
+    .card{
+        width: 8.5rem;
+    }
+    #all_favoritesblock2{
+        margin-left: 3rem;
+    }
+}
